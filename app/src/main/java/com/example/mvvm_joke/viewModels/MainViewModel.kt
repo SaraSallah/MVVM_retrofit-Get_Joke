@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 
 class MainViewModel : ViewModel() {
-    val repository = JokeRepository()
+    private val repository = JokeRepository()
     val joke = MutableLiveData<JokeRseponse>()
 
     init {
